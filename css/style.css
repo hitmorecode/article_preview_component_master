@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --fw-500: 500;
+  --fw-700: 700;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: none;
+}
+
+.card-holder {
+  width: 73rem;
+  height: auto;
+  display: flex;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 28.5rem;
+  height: auto;
+  overflow: hidden;
+  background-color: red;
+}
+
+.image {
+  width: 35rem;
+  height: inherit;
+  background-image: url(../img/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* scale: 1.1; */
+}
+
+article {
+  padding: 3.3rem;
+  width: 44.5rem;
+  height: auto;
+}
+
+.article-header {
+  font-size: 2.1rem;
+  font-weight: var(--fw-700);
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 1.4rem;
+}
+
+.article-content {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+  font-weight: var(--fw-500);
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+}
+
+.author-name {
+  font-size: 1.3rem;
+  font-weight: var(--fw-700);
+  color: var(--very-dark-grayish-blue);
+}
+
+.author-post-date {
+  font-size: 1.3rem;
+  font-weight: var(--fw-500);
+  color: var(--grayish-blue);
+}
+
+.social-media-share {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100%;
+  border: none;
+}

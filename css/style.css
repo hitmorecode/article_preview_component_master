@@ -111,6 +111,10 @@ article {
   border: none;
 }
 
+.no-display {
+  display: none;
+}
+
 .social-media {
   position: absolute;
   top: 13rem;

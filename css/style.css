@@ -31,12 +31,13 @@ h1 {
 }
 
 .card-holder {
+  position: relative;
   width: 73rem;
   height: auto;
   display: flex;
   background-color: hsl(0, 100%, 100%);
   border-radius: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .image {
@@ -46,14 +47,9 @@ h1 {
   background-color: red;
 }
 
-.image {
+.image img {
   width: 35rem;
   height: inherit;
-  background-image: url(../img/drawers.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* scale: 1.1; */
 }
 
 article {
@@ -78,6 +74,7 @@ article {
 }
 
 .card-footer {
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,4 +109,36 @@ article {
   height: 3.2rem;
   border-radius: 100%;
   border: none;
+}
+
+.social-media {
+  position: absolute;
+  top: 13rem;
+  left: 55rem;
+  background-color: var(--very-dark-grayish-blue);
+  width: 24.8rem;
+  height: 5.5rem;
+  padding: 1.7rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.social-media:before {
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--very-dark-grayish-blue);
+  position: absolute;
+  top: 4.6rem;
+  left: 50%;
+  transform: rotate(45deg);
+}
+
+.share {
+  color: var(--light-grayish-blue);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  letter-spacing: 0.3rem;
 }

@@ -128,7 +128,7 @@ article {
   padding: 1.7rem 3rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   border-radius: 1rem;
 }
 
